@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <h1>Application Form</h1>
+
+    <form>
+        <label for="first">First Name: </label>
+        <input type="text" name="first" id="first">
+
+        <label for="last">Last Name: </label>
+        <input type="text" name="last" id="last">
+        <br/>
+        <br/>
+
+        <label for="DOB">Date of birth: </label>
+        <input type="date" name="DOB" id="DOB">
+
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age">
+        <br/>
+        <br/>
+
+        <label for="gender">Gender: </label>
+        <select name="gender" id="gender-select">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="no prefer to say">no prefer to say</option>
+        </select>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Enter email address">
+        <br/>
+        <br/>
+
+        <p>Position Available: 
+            <label for="jd">Junior Developer</label>
+            <input type="radio" name="job" id="jd">
+
+            <label for="mld">Mid-level Developer</label>
+            <input type="radio" name="job" id="mld">
+
+            <label for="sd">Senior Developer</label>
+            <input type="radio" name="job" id="sd">
+        </p>
+
+        <p>Programming Language: 
+            <label for="java">Java</label>
+            <input type="checkbox" name="Programming-language" id="java">
+
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="Programming-language" id="js">
+
+            <label for="py">Python</label>
+            <input type="checkbox" name="Programming-language" id="py">
+        </p>
+
+        <label for="passwd">Password:</label>
+        <input type="password" name="passwd" id="passwd">
+
+        <label for="c-passwd">Confirm Password</label>
+        <input type="password" name="passwd" id="c-passwd">
+        <br/>
+        <br/>
+
+        <button>Submit</button>
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

@@ -3,4 +3,7 @@ nano .gitignore
 *.mp3
 *.mp4
 *.webm
+*.png
+*.jpg
+
 
