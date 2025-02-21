@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <style>
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Width/Height Attributes or Style?</h2>
+    <p>
+      The first image uses the width attribute (set to 128 pixels), but the
+      style in the head section overrides it, and sets the width to 100%.
+    </p>
+    <img src="/media/html5.gif" alt="HTML5 Icon" width="128" height="128" />
+    <p>
+      The second image uses the style attribute to set the width to 128 pixels,
+      this will not be overridden by the style in the head section:
+    </p>
+    <img
+      src="/media/html5 (1).gif"
+      alt="HTML5 Icon"
+      style="width: 128px; height: 128px"
+    />
+    <br />
+    <h2>Images on Another Server/Website</h2>
+    <img
+      src="https://images.pexels.com/photos/17941534/pexels-photo-17941534/free-photo-of-sony-walkman-with-earphones.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="sony camera"
+      style="width: 200px; height: 300px"
+    />
+    <br />
+    <h2>Animated Images</h2>
+    <img
+      src="/media/coding.gif"
+      alt="Computer Man"
+      style="width: 250px; height: 150px"
+    />
+
+    <br />
+    <h2>Image as a Link</h2>
+    <a
+      href="https://camo.githubusercontent.com/c30aa72a0317674536920d206fd572c541c1fc15701b3c598fec935b95e85bf5/68747470733a2f2f692e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a45784f577777627a68704e4846725a6d643665476778625746684f48466f656d646963486f78655856695958646e61324d305a33526a5a795a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f6949716d4d3574546a6d704f42396d70626e2f67697068792e676966"
+    >
+      <img src="/media/coding.gif" alt="Computer Man" style="width: 290px" />
+    </a>
+    
+  </body>
+</html>
