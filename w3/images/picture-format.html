@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Format</title>
+  </head>
+  <body>
+    <h2>The picture Element</h2>
+
+    <picture>
+      <source srcset="/media/img_avatar.png" />
+      <source srcset="/media/img_avatar.jpg" />
+      <img src="/media/img_avatar.gif" alt="Avatar" />
+    </picture>
+
+    <p>
+      The picture element can be used when the image format is not supported by
+      all devices.
+    </p>
+
+    <p>
+      The device will use the first image format it supports, and ignore the
+      rest of the images.
+    </p>
+  </body>
+</html>
