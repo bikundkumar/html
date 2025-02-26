@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Show Different Images Depending on Browser Width</h2>
+
+    <picture>
+      <source media="(max-width: 600px)" srcset="/media/img_smallflower.jpg" />
+      <source media="(max-width: 1500px)" srcset="/media/img_flowers.jpg" />
+      <source srcset="/media/flower.jpg">
+      <img src="/media/img_flowers.jpg" alt="Flowers" style="width: auto;">
+    </picture>
+  </body>
+</html>
