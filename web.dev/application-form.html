@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: lightpink;
+        font-family: sans-serif;
+      }
+      [aria-label="close"] {
+        float: right;
+        appearance: none;
+        border-radius: 5rem;
+        margin: -1em;
+      }
+      p {
+        margin-top: 1em;
+      }
+      h2 + p {
+        margin-top: -1em;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <dialog open aria-labelledby="dialogid">
+      <form action="thankyou.php">
+        <button
+          type="submit"
+          aria-label="close"
+          formmethod="dialog"
+          formnovalidate
+        >
+          X
+        </button>
+        <h2 id="dialogid">Application</h2>
+        <p>All fields are required</p>
+        <p>
+          <label
+            >Name:
+            <input type="text" name="name" required />
+          </label>
+        </p>
+        <p>
+          <label
+            >Warranty:
+            <input type="number" min="0" max="10" name="warranty" required />
+          </label>
+        </p>
+        <p>
+          <label
+            >Power source:
+            <select name="powersoure">
+              <option>AC/DC</option>
+              <option>Battery</option>
+              <option>Solar</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <button type="submit" formmethod="post">Submit</button>
+        </p>
+      </form>
+    </dialog>
+  </body>
+</html>

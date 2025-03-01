@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video src="/media/JavaScriptTutorialForBeginners01.mp4" poster="/media/img_smallflower.jpg" controls >
+      <p>
+        Watch
+        <a href="/media/JavaScriptTutorialForBeginners01.mp4"
+          >video on Youtube</a
+        >
+      </p>
+    </video>
+    <br />
+    <br />
+
+    <video controls poster="/media/img_avatar.png">
+      <source src="/media/JavaScriptTutorialForBeginners01.mp4" type="video/mp4" />
+      <source src="videos/machines.mp4" type="video/mp4" />
+      <source src="videos/machines.ogv" type="video/ogg" />
+      <track
+        label="English"
+        kind="subtitles"
+        srclang="en"
+        src="vtt/subtitles-en.vtt"
+        default
+      />
+      <track
+        label="Francais"
+        kind="subtitles"
+        srclang="fr"
+        src="vtt/subtitles-fr.vtt"
+      />
+      <p>Watch <a href="/media/JavaScriptTutorialForBeginners01.mp4">video on Youtube</a></p>
+    </video>
+
+    <h2>Background video considerations</h2>
+    <video playsinline autoplay loop muted poster="/media/img_car.jpg" role="none">
+        <source src="/media/JavaScriptTutorialForBeginners01.mp4" type="video/mp4">
+        <source src="/media/JavaScriptTutorialForBeginners01.mp4" type="video/webm">
+        <source src="/media/JavaScriptTutorialForBeginners01.mp4" type="video/ogg">
+
+    </video>
+
+  </body>
+</html>

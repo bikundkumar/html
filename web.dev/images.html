@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>images</title>
+  </head>
+  <body>
+    <img src="/media/img_smallflower.jpg" alt="flower" />
+    <br />
+
+    <img
+      src="/media/small-size.jpg"
+      alt="building"
+      srcset="/media/small-size.jpg 400w, /media/small-size.jpg 800w"
+      sizes="(max-width: 800px) 400px, 800px"
+    />
+    <br>
+
+    <picture>
+      <source src="/media/workplace.jpg" media="(max-width: 800px)" />
+      <source src="/media/workplace.jpg" />
+      <img src="/media/workplace.jpg" alt="workplace" />
+    </picture>
+  </body>
+</html>
